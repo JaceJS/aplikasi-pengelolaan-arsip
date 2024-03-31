@@ -9,13 +9,29 @@
         <div class="collapse navbar-collapse" id="navbarNav">
 
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link fw-semibold me-3" href="<?php echo $base_url ?>/beranda.php">Beranda</a>
-                </li>
 
-                <!-- Menu jika admin -->
+                <!-- Menu staff -->
+                <?php if ($_SESSION['role'] == 'anggota') { ?>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold me-3" href="<?php echo $base_url ?>/beranda.php">Beranda</a>
+                    </li>
+                <?php } ?>
+
+                <!-- Menu admin -->
                 <?php if ($_SESSION['role'] == 'admin') { ?>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold me-3" href="<?php echo $base_url ?>/admin/metadata/kelola-metadata.php">Metadata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold me-3" href="<?php echo $base_url ?>/admin/kategori/kelola-kategori.php">Kategori</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold me-3" href="<?php echo $base_url ?>/admin/lokasi/kelola-lokasi.php">Lokasi Penyimpanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold me-3" href="<?php echo $base_url ?>/admin/pengguna/kelola-pengguna.php">Pengguna</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle fw-semibold me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Menu Admin
                         </a>
@@ -25,7 +41,7 @@
                             <li><a class="dropdown-item" href="<?php echo $base_url ?>/admin/lokasi/kelola-lokasi.php">Lokasi Penyimpanan</a></li>
                             <li><a class="dropdown-item" href="<?php echo $base_url ?>/admin/pengguna/kelola-pengguna.php">Pengguna</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                 <?php } ?>
 
                 <li class="nav-item dropdown">

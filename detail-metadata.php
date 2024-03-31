@@ -77,7 +77,7 @@ $row = $result->fetch_assoc();
                                 <dd class="col-5">: <?php echo $row["kategori_rekaman"]; ?></dd>
                                 <hr>
                                 <dt class="col-4">Produser</dt>
-                                <dd class="col-5">: <?php echo $row["produser"]; ?></dd>
+                                <dd class="col-5">: <a href="detail-produser.php?produser=<?php echo $row["produser"]; ?>"><?php echo $row["produser"]; ?></a></dd>
                                 <hr>
                                 <dt class="col-4">Keterangan</dt>
                                 <dd class="col-5">: <?php echo $row["keterangan"]; ?></dd>

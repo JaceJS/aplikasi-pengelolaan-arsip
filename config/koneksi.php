@@ -1,8 +1,8 @@
 <?php
 // membuat variabel sesuai host, username, pass, nama_database, untuk koneksi ke database mysql
-$host = "localhost:3307";
+$host = "localhost";
 $username = "root";
-$password = "";
+$password = "root";
 $db = "arsip_db";
 
 // membuat koneksi berdasarkan variabel diatas
@@ -14,4 +14,4 @@ if ($mysqli->connect_error) {
 }
 
 // membuat variabel base_url untuk menyimpan alamat website
-$base_url = "http://localhost/web_arsip";
+$base_url = "https://web-arsip.test";

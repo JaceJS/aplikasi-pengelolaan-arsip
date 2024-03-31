@@ -22,7 +22,13 @@ if ($stmt->fetch() && password_verify($password, $hashed_password)) {
     $_SESSION['username'] = $username;
     $_SESSION['role'] = $role;
 
-    header("Location: beranda.php");
+    if ($role == 'admin') {
+        header("Location: admin/metadata/kelola-metadata.php");
+    } else {
+        header("Location: beranda.php");
+    }
+
+
     exit();
 } else {
     $_SESSION['login_error'] = '<div class="alert alert-danger" style="font-size: 1rem" role="alert">Username atau password tidak valid</div>';
