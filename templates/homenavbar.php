@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg topbar mb-4 static-top shadow text-dark" style="background-color: #ffd3b6;">
     <div class="container">
         <a class="navbar-brand fw-bold" href="home.php">
-            <img src="<?php echo $base_url ?>/images/logo.png" width="80px" alt="logo">
+            <img src="<?php echo $base_url ?>/images/logo.svg" width="80px" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

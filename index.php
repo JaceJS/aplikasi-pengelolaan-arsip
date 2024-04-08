@@ -27,7 +27,7 @@ if (isset($_SESSION['user_id'])) {
                     <div class="card shadow-lg" style="background-color: #ffd3b6; border-radius: 1rem;">
                         <div class="card-body px-sm-5 py-sm-4 p-3 text-center">
                             <div class="mb-3 d-flex align-items-center justify-content-center">
-                                <img src="images/logo.png" width="150px" alt="logo">
+                                <img src="images/logo.svg" width="150px" alt="logo">
                             </div>
                             <h4 class="fw-bold">
                                 APLIKASI
